@@ -1,0 +1,24 @@
+    1  cd C:\GitRepository
+    2  git clone https://github.com/Liudmyla01-lang/HW_10.git
+    3  cd ./HW_10
+    4  touch text_ignore.txt
+    5  nano ./.gitignore
+    6  git status
+    7  git add .
+    8  git commit -a -m "feat(gitignore): Add text_ignore.txt to ignore"
+    9  touch main_test.txt
+   10  git add .
+   11  git commit -a -m "feat: Add main_test.txt"
+   12  git branch develop
+   13  git checkout develop
+   14  touch develop_test.txt
+   15  git add .
+   16  git commit -a -m "feat: Add develop_test.txt"
+   17  nano ./develop_test.txt
+   18  git status
+   19  git add .
+   20  git commit -a -m "feat: Add test text to develop_test.txt"
+   21  git checkout main
+   22  git merge develop
+   23  git log
+   24  history > command_list.csv
